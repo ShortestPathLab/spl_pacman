@@ -1,7 +1,15 @@
-## Master Branch WITHOUT Code
+## 
 
-This is the master branch of the repo for FIT3080. This branch does not include any code. Please navigate to the branch specified in your assignment sheet for details about cloning the repo.
+This repository is a fork of the [Berkeley AI Pac-Man
+Project](https://ai.berkeley.edu/project_overview.html). It contains
+modifications and improvements developed during the teaching of various
+AI classes at Monash University, including:
+- FIT3080 
+- FIT5047
+- FIT5222 
 
-Assignment 1 is on branch: assignment1
+Structure: 
+The **main** branch contains the core Pac-Man simulation and example agents. 
+Other branches contain additional implementations for learning about specific
+topics in AI. 
 
-If you are unsure on how to clone our repo and navigate to the relevant branch, or have trouble with the instructions in the relevant assignment branch, please contact us over the Ed forum, in your class or during consultation hours. We're happy to help get you set up for the assignments!
