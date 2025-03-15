@@ -25,6 +25,7 @@ import sys
 import time
 import traceback
 from math import ceil
+from logs.search_logger import log_function
 from util import *
 
 #######################
@@ -682,6 +683,7 @@ class Game:
                         return 
 
                     move_time += time.time() - start_time
+                    log_function.flush()
 
                     if move_time > self.rules.getMoveWarningTime(agentIndex):
                         self.totalAgentTimeWarnings[agentIndex] += 1

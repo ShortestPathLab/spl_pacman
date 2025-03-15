@@ -46,6 +46,7 @@ import sys
 
 from game import Actions, Directions, Game, GameStateData
 from layout import getLayout
+from logs import search_logger
 from util import import_by_name, manhattanDistance, nearestPoint
 
 ###################################################
@@ -720,6 +721,7 @@ def runGames( layout, pacman, ghosts, display, numGames, record, numTraining = 0
 
         winRate = wins.count(1)/ float(len(wins))
         print(f"Remaining Food: {', '.join([str(rf) for rf in remaining_foods])}")
+        print('moveHistory: ' + str(move_histories))
         print('pathLength: ' + str(path_lengths))
         print('Average Score:', sum(scores) / float(len(scores)))
         print('Scores:       ', ', '.join([str(score) for score in scores]))
@@ -727,6 +729,7 @@ def runGames( layout, pacman, ghosts, display, numGames, record, numTraining = 0
         print('Record:       ', ', '.join([ ['Loss', 'Win', "Draw"][int(w)] for w in wins]))
 
         logger.info(f"Remaining Food: {', '.join([str(rf) for rf in remaining_foods])}")
+        logger.info('moveHistory: ' + str(move_histories))
         logger.info('pathLength: ' + str(path_lengths))
         logger.info('Average Score: %.2f', sum(scores) / float(len(scores)))
         logger.info('Scores: ' + ', '.join([str(score) for score in scores]))
@@ -747,6 +750,7 @@ if __name__ == '__main__':
     > python pacman.py --help
     """
     args = readCommand( sys.argv[1:] ) # Get game components based on input
+    search_logger.search_logger(args['outfile'])
     logger = logging.getLogger('main')
     logger.info(f"input_args: {args.items()}")
     runGames( **args )

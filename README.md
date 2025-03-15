@@ -1,15 +1,11 @@
-## 
+## Assignment: State-Space Search 
 
-This repository is a fork of the [Berkeley AI Pac-Man
-Project](https://ai.berkeley.edu/project_overview.html). It contains
-modifications and improvements developed during the teaching of various
-AI classes at Monash University, including:
-- FIT3080 
-- FIT5047
-- FIT5222 
+This branch contains all the code for your assignment on single-agent and
+adversarial search. To get started please **clone** this repo and follow the
+instructions in your Assignment Specification and Installation/Getting Started
+Guide. If you are unsure how to clone the repo please refer to the relevant
+[documentation](https://docs.github.com/en/get-started/start-your-journey/downloading-files-from-github).
 
-Structure: 
-The **main** branch contains the core Pac-Man simulation and example agents. 
-Other branches contain additional implementations for learning about specific
-topics in AI. 
+Alternatively, reach out to your teaching team via forums, during class or 
+in consultation. We're happy to help get you set up for the assignments!
 
