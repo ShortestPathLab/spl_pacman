@@ -669,6 +669,7 @@ def runGames( layout, pacman, ghosts, display, numGames, record, numTraining = 0
     games = []
 
     # if you pass a single layout file we only want to run that file so change numGames
+    print(layout)
     if layout.endswith('.lay'):
     # specificed layout
         layoutNames = [layout]
@@ -697,7 +698,6 @@ def runGames( layout, pacman, ghosts, display, numGames, record, numTraining = 0
         game = rules.newGame( nextLayout, pacman, ghosts, gameDisplay, beQuiet, catchExceptions)
         game.run()
         if not beQuiet: games.append(game)
-
 
         if record:
             import pickle
